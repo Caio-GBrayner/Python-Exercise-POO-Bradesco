@@ -35,3 +35,6 @@ class Account:
 
     def details_to_string(self):
         return f"Balance: {self.__balance}, Account ID: {self.__account_id}, Holder: {self.__holder}"
+
+    def __str__(self):
+        return self.details_to_string()
